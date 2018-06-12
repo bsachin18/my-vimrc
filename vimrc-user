@@ -1,0 +1,53 @@
+set nocompatible
+set autowrite
+set backspace=2
+set backup
+set backupdir=~/.VIM
+set cindent
+set hlsearch
+set history=50
+set ignorecase
+set incsearch
+set laststatus=2
+set matchpairs=(:),{:},[:],<:>
+set matchtime=7
+set path=.,../include,/usr/include,,
+set ruler
+" set shiftwidth=8
+" set tabstop=4
+set showfulltag
+set showmatch
+" set smarttab
+" set shiftwidth=4
+set smartcase
+" set smartindent
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,,.ppc860,.ppc860_o
+set title
+set viminfo='50,\"50,%,n~/VIM/viminfo
+set visualbell
+set whichwrap=b,s,h,l<,>,[,]
+set wildmenu
+set nowrap
+set notitle
+set background=dark
+set background=light
+set nu
+" set expandtab
+" set tabstop=4
+syn off
+behave xterm
+set mousehide
+colorschem pablo
+nnoremap <silent> <F7> :TlistToggle<CR>
+nnoremap <silent> <F4> :qa!<CR>
+set list lcs=trail:?,tab:..
+
+map <F6> <C-W>w
+map <F10> <C-W><A-Right>
+map <F9> <C-W><A-Left>
+map <F3> <C-]>
+map <F2> <C-t>
+
+filetype plugin on
+filetype plugin indent on
+let Tlist_Auto_Open=0
